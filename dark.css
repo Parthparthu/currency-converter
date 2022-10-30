@@ -1,0 +1,137 @@
+* 
+{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.reallyEverthing
+{
+    background-color: #202124;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+}
+
+.everything
+{
+    border: 2px solid #3C4043;
+    color: white;
+    text-align: center;
+    margin: auto;
+    width: 500px;
+    height: 400px;
+    margin-top: 50px;
+    top: 50%;
+    left: 50%;
+    padding: 10px; 
+}
+
+h2 
+{
+    font-size: xx-large;
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+.Cinput
+{       
+    width: 400px;
+    height: 50px;
+    background-color: #202124;
+    font-size: large;
+    font-weight: bolder;
+    border: 1px solid grey;
+    border-radius: 8px;
+    margin-top: 50px;
+    padding-left: 22px;
+}
+.Cinput:hover
+{
+    border: 1px solid white;
+}
+
+#inputCC
+{
+    width: 200px;
+    height: 45px;
+    color: white;
+    background-color: #202124;
+    font-size: large;
+    font-weight: bolder;
+    text-align: right;
+    border: 1px solid;
+    border-style: none;
+}
+#inputCC::placeholder
+{
+    color: white;
+    text-align: right;
+}
+
+.converted
+{
+    width: 400px;
+    height: 50px;
+    background-color: #202124;
+    font-size: large;
+    font-weight: bolder;
+    border: 1px solid grey;
+    border-radius: 8px;
+    margin-top: 50px;
+    padding-top: 14px;
+    padding-left: 80px;
+    text-align: center;
+}
+.converted:hover
+{
+    border: 1px solid white;
+}
+/*
+.outputClass
+{           
+    width: 200px;
+    height: 45px;
+    background-color: #202124;
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+    border: 1px solid;
+    border-style: none;
+}
+*/
+
+.buttonCC
+{    
+    color: white;
+    border: 1px hidden black;
+    border-radius: 20px;
+    background-color: #303134;
+    margin-top: 53px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+} 
+.buttonCC:hover
+{
+    background-color: #3C4043;
+    color: white;
+    border: 1px hidden black;
+    border-radius: 20px;
+}
+
+.modeCD
+{
+    background-color: #202124;
+}
+
+#modeC
+{
+    background-image: url(theme.png);
+    border: 1px hidden black;
+    border-radius: 4px;
+    background-color: #303134;
+    width: 32px;
+    height: 32px;
+}

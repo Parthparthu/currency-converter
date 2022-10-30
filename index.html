@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Currency Convertor</title>
+        <link id="pageStyle" rel="stylesheet" type="text/css" href="dark.css">
+    </head>
+    <body class="reallyEverthing">
+        <div class="everything">
+            <h2>Currency Convertor</h2>
+            <center>
+                <div class="Cinput">
+                    <input type="text" id="inputCC" placeholder="1.00">
+                    <label for="inputCC"><span style="color: #3C4043;">|&nbsp&nbsp</span>Indian Ruppee</label>
+                </div>
+                <div class="converted">
+                    <label id="outputCC">0.012</label>
+                    <label for="outputCC"><span style="color: #3C4043;">|&nbsp&nbsp</span>United States Dollar</label>
+                </div>
+            </center>
+            <br>
+            <button id="buttonCC" class="buttonCC" onclick="convert()">Convert</button>
+            <br>
+        </div><br><br>
+        <div class="modeCD">
+            <button id="modeC" onclick="changeC('light.css')"></button>
+        </div>
+        <script>
+            let Iruppees;
+            let converted;
+            let output;
+
+            function convert()
+            {
+                Iruppees = document.getElementById('inputCC').value;
+                if (Iruppees == "")
+                {
+                    location.reload();
+                }
+                else if (Number.isInteger(Iruppees) == true)
+                {
+                    alert("Invalid Input!");
+                    location.reload();
+                }
+                else
+                {
+                    converted = Iruppees * 0.012;
+                    console.log(converted);
+                    output = converted.toFixed(3);
+                    document.getElementById('outputCC').innerHTML = output;
+                }
+            }
+
+            function changeC(sheet)
+            {   
+                document.getElementById('pageStyle').setAttribute('href', sheet);
+            }
+        </script>
+    </body>
+</html>
